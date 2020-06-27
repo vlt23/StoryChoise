@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">故事选择题</string>
+    <string name="yes">对</string>
+    <string name="no">错</string>
+    <string name="next">下一题</string>
+    <string name="previous">前一题</string>
+</resources>
