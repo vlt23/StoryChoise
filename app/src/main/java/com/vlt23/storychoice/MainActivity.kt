@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun yesBtnListener() {
-        val currentQuestion = questions[currentQuestionIndex]
+        val currentQuestion: TrueFalse = questions[currentQuestionIndex] as TrueFalse
         if (currentQuestion.isCorrect) {
             correctToast()
         } else {
@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun noBtnListener() {
-        val currentQuestion = questions[currentQuestionIndex]
+        val currentQuestion: TrueFalse = questions[currentQuestionIndex] as TrueFalse
         if (!currentQuestion.isCorrect) {
             correctToast()
         } else {
@@ -105,5 +105,4 @@ class MainActivity : AppCompatActivity() {
         val resultImage = findViewById<ImageView>(R.id.resultImage)
         resultImage.visibility = View.INVISIBLE
     }
-
 }
