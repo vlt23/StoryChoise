@@ -88,8 +88,6 @@ class MainActivity : AppCompatActivity() {
         resultImage.visibility = View.VISIBLE
         Toast.makeText(applicationContext, "答对啦！", Toast.LENGTH_LONG).show()
         resultImage.setImageResource(R.drawable.zan)
-        resultImage.maxHeight = 100
-        resultImage.maxWidth = 100
     }
 
     private fun failToast() {
@@ -97,8 +95,6 @@ class MainActivity : AppCompatActivity() {
         resultImage.visibility = View.VISIBLE
         Toast.makeText(applicationContext, "Oh! 答错了哟!", Toast.LENGTH_LONG).show()
         resultImage.setImageResource(R.drawable.tom)
-        resultImage.maxHeight = 100
-        resultImage.maxWidth = 100
     }
 
     private fun invisibleImage() {
